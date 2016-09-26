@@ -1,0 +1,1 @@
+angular.module("MainCtrl",[]).controller("MainCtrl",["$stateParams","$rootScope","$scope","$state",function(n,o,e,t){e.menuToggled=!0,e.menuLink=function(n){e.menuToggled=!0,t.go(n)}}]);

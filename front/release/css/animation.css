@@ -1,0 +1,1 @@
+.contents-view.ng-enter,.view.ng-enter{transition-duration:.5s;transition-timing-function:linear}.view.ng-enter{transform:translateY(-100%)}.view.ng-enter-active{transform:translateY(0)}.contents-view.ng-enter{opacity:0}.contents-view.ng-enter-active{opacity:1}.error-message-show-hide{transition:all .5s linear}.error-message-show-hide.ng-hide{opacity:0}

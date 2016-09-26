@@ -1,0 +1,7 @@
+# node
+/dev/node_modules/
+
+# bower
+/dev/bower_components/
+
+.DS_Store

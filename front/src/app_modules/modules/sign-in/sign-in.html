@@ -1,0 +1,49 @@
+<div class="container" ng-animate-ref="sign-in">
+	<form name="signInForm" class="css-form signin-form" novalidate>
+		<div class="text-center signin-form-title">
+			<div class="visible-xs">
+				<h3 class="" style="font-family: 'Kaushan Script', cursive;color: #fff;">Angular JS</h3>
+				<h3 style="font-family: 'Kaushan Script', cursive;color: #fff;">Enterprise Application</h3>
+				<h3 style="font-family: 'Kaushan Script', cursive;color: #fff;">Template</h3>
+			</div>
+			<div class="visible-sm visible-md visible-lg">
+				<h1 class="" style="font-family: 'Kaushan Script', cursive;color: #fff;">Angular JS</h1>
+				<h1 style="font-family: 'Kaushan Script', cursive;color: #fff;">Enterprise Application</h1>
+				<h1 style="font-family: 'Kaushan Script', cursive;color: #fff;">Template</h1>
+			</div>
+		</div>
+		<div class="signin-form-contents">
+			<div ng-show="signInForm.$invalid && enableErrorMessage" class="has-error error-message-show-hide error-message-style">
+				<p class="help-block">
+					<i class="icon ion-alert-circled"></i>
+					<span class="sr-only">Error:</span>
+					{{errorMessage}}
+				</p>
+			</div>
+			<div class="form-group" ng-class="{'has-error': (signInForm.$submitted || signInForm.user_id.$touched) && signInForm.user_id.$invalid }">
+				<label class="sr-only" for="inputUserId">User ID</label>
+				<input type="text" name="user_id" id="inputUserId" ng-model="user.user_id" ng-change="inputChange()" class="form-control" placeholder="User ID" autofocus required />
+				<p ng-show="(signInForm.$submitted || signInForm.user_id.$touched) && signInForm.user_id.$invalid" class="help-block error-message-style error-message-show-hide">
+					<i class="icon ion-alert-circled"></i>
+					<span class="sr-only">Error:</span>
+					User ID を入力してください
+				</p>
+			</div>
+			<div class="form-group" ng-class="{'has-error': (signInForm.$submitted || signInForm.password.$touched) && signInForm.password.$invalid }">
+				<label class="sr-only" for="inputPassword">Password</label>
+				<input type="Password" name="password" id="inputPassword" ng-model="user.password" ng-change="inputChange()" class="form-control" placeholder="Password" required />
+				<p ng-show="(signInForm.$submitted || signInForm.password.$touched) && signInForm.password.$invalid" class="help-block error-message-style error-message-show-hide">
+					<i class="icon ion-alert-circled"></i>
+					<span class="sr-only">Error:</span>
+					Password を入力してください
+				</p>
+			</div>
+			<p>
+				<button type="submit" class="btn btn-haizakura btn-lg btn-block" ng-disabled="signInForm.$invalid || deviceDetector.isDesktop()" ng-click="signIn(user)">
+					<i class="icon ion-ios-unlocked"></i>&nbsp;
+					Sign In
+				</button>
+			</p>
+		</div>
+	</form>
+</div>

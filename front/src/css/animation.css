@@ -1,0 +1,23 @@
+.view.ng-enter {
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transform:translateY(-100%);
+}
+.view.ng-enter-active {
+    transform:translateY(0%);
+}
+.contents-view.ng-enter {
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    opacity: 0;
+}
+.contents-view.ng-enter-active {
+    opacity: 1;
+}
+.error-message-show-hide {
+    transition:all 0.5s linear;
+}
+.error-message-show-hide.ng-hide {
+    opacity:0;
+}
+

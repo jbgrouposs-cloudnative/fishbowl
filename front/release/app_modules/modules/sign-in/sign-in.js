@@ -1,0 +1,1 @@
+angular.module("SignInCtrl",[]).controller("SignInCtrl",["$stateParams","$rootScope","$scope","$state",function(e,n,r,s){r.enableErrorMessage=!1,r.inputChange=function(){r.enableErrorMessage=!1},r.signIn=function(e){if(r.signInForm.$valid){var a={userId:"99999",userName:"Test User"};n.user=a,s.go("main.list")}}}]);

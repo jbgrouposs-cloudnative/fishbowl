@@ -1,0 +1,1 @@
+angular.module("DetailCtrl",[]).controller("DetailCtrl",["$stateParams","$rootScope","$scope","$state",function(t,e,a,o){a.userInfo=t.rowData,a.userInfo?a.pageTitle="詳細":a.pageTitle="新規登録",a.runEntry=function(){o.go("main.list")}}]);
