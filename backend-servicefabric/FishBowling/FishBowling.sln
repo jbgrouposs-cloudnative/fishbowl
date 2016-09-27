@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "FishBowling", "FishBowling\FishBowling.sfproj", "{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi1", "WebApi1\WebApi1.csproj", "{1B7F4409-2A71-4E02-9BF4-3EC3E3B1B961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}.Debug|x64.ActiveCfg = Debug|x64
+		{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}.Debug|x64.Build.0 = Debug|x64
+		{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}.Debug|x64.Deploy.0 = Debug|x64
+		{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}.Release|x64.ActiveCfg = Release|x64
+		{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}.Release|x64.Build.0 = Release|x64
+		{B8CA1681-F505-48B2-9F79-A7EC3168AA1C}.Release|x64.Deploy.0 = Release|x64
+		{1B7F4409-2A71-4E02-9BF4-3EC3E3B1B961}.Debug|x64.ActiveCfg = Debug|x64
+		{1B7F4409-2A71-4E02-9BF4-3EC3E3B1B961}.Debug|x64.Build.0 = Debug|x64
+		{1B7F4409-2A71-4E02-9BF4-3EC3E3B1B961}.Release|x64.ActiveCfg = Release|x64
+		{1B7F4409-2A71-4E02-9BF4-3EC3E3B1B961}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

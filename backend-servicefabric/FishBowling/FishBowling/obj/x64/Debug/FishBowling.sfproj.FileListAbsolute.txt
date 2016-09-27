@@ -1,0 +1,1 @@
+C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\FishBowling\obj\x64\Debug\FishBowling.sfprojResolveAssemblyReference.cache
