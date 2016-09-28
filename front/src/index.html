@@ -10,10 +10,18 @@
         <link href="css/simple-sidebar.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/animation.css" rel="stylesheet">
+
+        <style type="text/css">
+            input{
+                width: 50px;
+            }
+        </style>
     </head>
     <body ng-app="app" class="body-background {{bodylayout}}">
+
         <div class="view-container">
-            <div ui-view="" class="view" autoscroll="false"></div>
+            <div ui-view="" class="view" autoscroll="false">
+            </div>
             <footer class="footer">
                 <div class="footer-container">
                     <div class="text-center text-muted">

@@ -1,1 +1,52 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"><link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"><link href="libs/Ionicons/css/ionicons.css" rel="stylesheet"><link href="css/simple-sidebar.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><link href="css/animation.css" rel="stylesheet"></head><body ng-app="app" class="body-background {{bodylayout}}"><div class="view-container"><div ui-view class="view" autoscroll="false"></div><footer class="footer"><div class="footer-container"><div class="text-center text-muted"><p style="display: inline;float: left;">&copy;&nbsp;2016 JBCC Corporation</p><p ng-show="user.userName" style="display: inline;float: right;"><i class="icon ion-person"></i>&nbsp;{{user.userName}}</p></div></div></footer></div><script src="libs/lodash.js"></script><script src="libs/jquery.js"></script><script src="libs/angular.js"></script><script src="libs/angular-ui-router.js"></script><script src="libs/angular-touch.js"></script><script src="libs/restangular.js"></script><script src="libs/bootstrap.js"></script><script src="libs/ui-bootstrap-tpls.js"></script><script src="libs/angular-animate.js"></script><script src="libs/angular-sanitize.js"></script><script src="libs/validate.js"></script><script src="app_modules/app.js"></script><script src="app_modules/modules/sign-in/sign-in.js"></script><script src="app_modules/modules/main/main.js"></script><script src="app_modules/modules/list/list.js"></script><script src="app_modules/modules/detail/detail.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="libs/Ionicons/css/ionicons.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
+
+        <style type="text/css">
+            input{
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body ng-app="app" class="body-background {{bodylayout}}">
+
+        <div class="view-container">
+            <div ui-view="" class="view" autoscroll="false">
+            </div>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="text-center text-muted">
+                        <p style="display: inline;float: left;">&copy;&nbsp;2016 JBCC Corporation</p>
+                        <p ng-show="user.userName" style="display: inline;float: right;"><i class="icon ion-person"></i>&nbsp;{{user.userName}}</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <script src="libs/lodash.js"></script>
+        <script src="libs/jquery.js"></script>
+        <script src="libs/angular.js"></script>
+        <script src="libs/angular-ui-router.js"></script>
+        <script src="libs/angular-touch.js"></script>
+        <script src="libs/restangular.js"></script>
+        <script src="libs/bootstrap.js"></script>
+        <script src="libs/ui-bootstrap-tpls.js"></script>
+        <script src="libs/angular-animate.js"></script>
+        <script src="libs/angular-sanitize.js"></script>
+        <script src="libs/validate.js"></script>
+        <script src="app_modules/app.js"></script>
+        <script src="app_modules/modules/sign-in/sign-in.js"></script>
+        <script src="app_modules/modules/main/main.js"></script>
+        <script src="app_modules/modules/list/list.js"></script>
+        <script src="app_modules/modules/detail/detail.js"></script>
+    </body>
+</html>

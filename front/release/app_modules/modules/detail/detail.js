@@ -1,1 +1,19 @@
-angular.module("DetailCtrl",[]).controller("DetailCtrl",["$stateParams","$rootScope","$scope","$state",function(t,e,a,o){a.userInfo=t.rowData,a.userInfo?a.pageTitle="詳細":a.pageTitle="新規登録",a.runEntry=function(){o.go("main.list")}}]);
+angular.module('DetailCtrl',[]).controller('DetailCtrl',[
+	'$stateParams',
+	'$rootScope',
+	'$scope',
+	'$state',
+	function($stateParams, $rootScope, $scope, $state){
+		$scope.userInfo = $stateParams.rowData;
+		
+		if($scope.userInfo) {
+			$scope.pageTitle = '詳細';
+		}else{
+			$scope.pageTitle = '新規登録';
+		}
+		
+		$scope.runEntry = function(){
+			$state.go('main.list');
+		};
+	}
+]);

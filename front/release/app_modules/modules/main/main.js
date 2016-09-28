@@ -1,1 +1,14 @@
-angular.module("MainCtrl",[]).controller("MainCtrl",["$stateParams","$rootScope","$scope","$state",function(n,o,e,t){e.menuToggled=!0,e.menuLink=function(n){e.menuToggled=!0,t.go(n)}}]);
+angular.module('MainCtrl',[]).controller('MainCtrl',[
+	'$stateParams',
+	'$rootScope',
+	'$scope',
+	'$state',
+	function($stateParams, $rootScope, $scope, $state){
+		$scope.menuToggled = true;
+		
+		$scope.menuLink = function(state){
+			$scope.menuToggled = true;
+			$state.go(state);
+		};
+	}
+]);

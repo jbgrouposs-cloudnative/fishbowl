@@ -1,5 +1,6 @@
 ﻿using System.Web.Http;
 using Owin;
+using Microsoft.Owin.Cors;
 
 namespace WebApi1
 {
@@ -9,6 +10,9 @@ namespace WebApi1
         // parameter in the WebApp.Start method.
         public static void ConfigureApp(IAppBuilder appBuilder)
         {
+            // Enable CORS
+            appBuilder.UseCors(CorsOptions.AllowAll);
+
             // Configure Web API for self-host. 
             HttpConfiguration config = new HttpConfiguration();
 

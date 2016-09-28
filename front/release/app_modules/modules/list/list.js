@@ -1,1 +1,39 @@
-angular.module("ListCtrl",[]).controller("ListCtrl",["$stateParams","$rootScope","$scope","$state","$timeout",function(t,e,s,a,o){s.menuToggled=!0,s.listData=[{firstName:"Mark",lastName:"Otto",userName:"@mdo",mailAddress:"test1@test.com",selectedRow:!1},{firstName:"Jacob",lastName:"Thornton",userName:"@fat",mailAddress:"test2@test.com",selectedRow:!1},{firstName:"Larry",lastName:"the Bird",userName:"@twitter",mailAddress:"test3@test.com",selectedRow:!1}],s.selectRow=function(t){t.selectedRow=!0,o(function(){a.go("main.detail",{rowData:t})},300)}}]);
+angular.module('ListCtrl',[]).controller('ListCtrl',[
+	'$stateParams',
+	'$rootScope',
+	'$scope',
+	'$state',
+	'$timeout',
+	function($stateParams, $rootScope, $scope, $state, $timeout){
+		$scope.menuToggled = true;
+		
+		$scope.listData = [
+			{
+				firstName:'Mark',
+				lastName: 'Otto',
+				userName: '@mdo',
+				mailAddress: 'test1@test.com',
+				selectedRow: false
+			},
+			{
+				firstName:'Jacob',
+				lastName: 'Thornton',
+				userName: '@fat',
+				mailAddress: 'test2@test.com',
+				selectedRow: false
+			},
+			{
+				firstName:'Larry',
+				lastName: 'the Bird',
+				userName: '@twitter',
+				mailAddress: 'test3@test.com',
+				selectedRow: false
+			}
+		];
+		
+		$scope.selectRow = function(row){
+			row.selectedRow = true;
+			$timeout(function(){$state.go('main.detail', {rowData: row});}, 300);
+		};
+	}
+]);

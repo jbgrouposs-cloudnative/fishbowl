@@ -33,3 +33,6 @@ C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBow
 C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\WebApi1\obj\x64\Debug\WebApi1.csprojResolveAssemblyReference.cache
 C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\WebApi1\obj\x64\Debug\WebApi1.exe
 C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\WebApi1\obj\x64\Debug\WebApi1.pdb
+C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\WebApi1\bin\x64\Debug\Microsoft.Owin.Cors.dll
+C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\WebApi1\bin\x64\Debug\System.Web.Cors.dll
+C:\Users\Shunichi Takagi\Documents\GitHub\fishbowl\backend-servicefabric\FishBowling\WebApi1\bin\x64\Debug\Microsoft.Owin.Cors.xml
